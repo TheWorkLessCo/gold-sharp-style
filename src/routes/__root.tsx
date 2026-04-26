@@ -105,6 +105,9 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
               height={140}
               className="h-12 w-auto transition group-hover:scale-105 md:h-14"
             />
+            <span className="font-display text-base font-bold tracking-tight leading-tight sm:text-lg">
+              A Son To Us <span className="text-gold-gradient">Kingdom Cuts</span>
+            </span>
           </Link>
           <nav className="hidden items-center gap-7 md:flex">
             <Link to="/" activeProps={{ className: "text-primary" }} activeOptions={{ exact: true }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Home</Link>
