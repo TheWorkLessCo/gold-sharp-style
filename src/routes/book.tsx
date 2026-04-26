@@ -76,8 +76,9 @@ function BookPage() {
         <div className="rounded-xl border border-border bg-card/60 p-6">
           <h2 className="font-display text-xl font-bold text-primary">Deposit Policy</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            A deposit is required to confirm every appointment and is applied toward your total. We'll
-            share the deposit details when we confirm your booking.
+            A <span className="text-gold-gradient font-bold">$15 deposit</span> is required to confirm
+            every appointment and is applied toward your total. We'll share payment details when we
+            confirm your booking.
           </p>
         </div>
       </div>
