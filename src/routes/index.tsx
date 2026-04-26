@@ -52,10 +52,10 @@ function Home() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
+          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-20"
           style={{ backgroundImage: `url(${logoVan})`, backgroundSize: "min(2000px, 180%) auto" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background pointer-events-none" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:px-8 md:py-32">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-primary">
@@ -66,7 +66,7 @@ function Home() {
               alt="A Son To Us — Kingdom Cuts"
               width={900}
               height={560}
-              className="mt-6 w-full max-w-xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
+              className="mt-6 w-full max-w-xl brightness-125 contrast-110 saturate-150 drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
             />
             <h1 className="sr-only">A Son To Us — Kingdom Cuts</h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl">
@@ -99,7 +99,7 @@ function Home() {
               alt="A Son To Us — Kingdom Cuts"
               width={900}
               height={560}
-              className="w-full md:scale-125 lg:scale-[1.4] origin-center drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
+              className="w-full md:scale-125 lg:scale-[1.4] origin-center brightness-125 contrast-110 saturate-150 drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
             />
           </div>
         </div>
