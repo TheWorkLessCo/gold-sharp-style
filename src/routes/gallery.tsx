@@ -28,7 +28,7 @@ const photos = [
   { src: cut3, alt: "Barber lining up a fresh fade with clippers" },
   { src: cut5, alt: "Sharp shape-up with hard part and skin fade" },
   { src: cut6, alt: "Kid's neckline cleanup with clippers" },
-  { src: cut4, alt: "Premium barber tools" },
+  { src: cut4, alt: "Beard trim and neckline cleanup" },
 ];
 
 function GalleryPage() {
