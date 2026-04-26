@@ -25,14 +25,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "A Son To Us — Kingdom Cuts | DFW Mobile Barber" },
+      { title: "Ason To Us — Kingdom Cuts | DFW Mobile Barber" },
       {
         name: "description",
         content:
           "Premium mobile barber serving Dallas, Fort Worth & surrounding areas. Haircuts, beard trims, shaves — we come to you. Call 214-854-1477.",
       },
-      { name: "author", content: "A Son To Us — Kingdom Cuts" },
-      { property: "og:title", content: "A Son To Us — Kingdom Cuts | DFW Mobile Barber" },
+      { name: "author", content: "Ason To Us — Kingdom Cuts" },
+      { property: "og:title", content: "Ason To Us — Kingdom Cuts | DFW Mobile Barber" },
       {
         property: "og:description",
         content: "Premium mobile barber serving all of DFW. Call 214-854-1477.",
@@ -100,7 +100,7 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
             <CrownIcon className="h-7 w-7 text-primary transition group-hover:scale-110" />
             <div className="flex flex-col leading-tight">
               <span className="font-display text-base font-bold text-gold-gradient md:text-lg">
-                A Son To Us
+                Ason To Us
               </span>
               <span className="text-[10px] tracking-[0.25em] text-muted-foreground md:text-xs">
                 KINGDOM CUTS
@@ -132,7 +132,7 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
               <div className="flex items-center gap-3">
                 <CrownIcon className="h-6 w-6 text-primary" />
                 <span className="font-display text-lg font-bold text-gold-gradient">
-                  A Son To Us — Kingdom Cuts
+                  Ason To Us — Kingdom Cuts
                 </span>
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
@@ -167,7 +167,7 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="mt-10 border-t border-border/40 pt-6 text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} A Son To Us — Kingdom Cuts. All rights reserved.
+            © {new Date().getFullYear()} Ason To Us — Kingdom Cuts. All rights reserved.
           </div>
         </div>
       </footer>

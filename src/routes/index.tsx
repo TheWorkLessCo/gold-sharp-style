@@ -8,13 +8,13 @@ import cut5 from "@/assets/cut-5.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "A Son To Us — Kingdom Cuts | DFW Mobile Barber" },
+      { title: "Ason To Us — Kingdom Cuts | DFW Mobile Barber" },
       {
         name: "description",
         content:
           "Premium mobile barber serving all of Dallas–Fort Worth. Fades, beards, shaves — booked to your door. Call 214-854-1477.",
       },
-      { property: "og:title", content: "A Son To Us — Kingdom Cuts | DFW Mobile Barber" },
+      { property: "og:title", content: "Ason To Us — Kingdom Cuts | DFW Mobile Barber" },
       {
         property: "og:description",
         content: "Premium mobile barber serving all of DFW. Call 214-854-1477.",
@@ -53,7 +53,7 @@ function Home() {
         <div className="absolute inset-0">
           <img
             src={heroVan}
-            alt="A Son To Us mobile barber van"
+            alt="Ason To Us mobile barber van"
             width={1920}
             height={1080}
             className="h-full w-full object-cover opacity-40"
@@ -66,7 +66,7 @@ function Home() {
               <span>👑</span> Mobile Barber Shop
             </div>
             <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] md:text-7xl">
-              <span className="text-gold-gradient">A Son To Us</span>
+              <span className="text-gold-gradient">Ason To Us</span>
               <span className="block text-foreground/95">Kingdom Cuts</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl">

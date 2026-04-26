@@ -3,13 +3,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — A Son To Us Kingdom Cuts" },
+      { title: "About — Ason To Us Kingdom Cuts" },
       {
         name: "description",
         content:
           "A faith-driven mobile barber serving Dallas–Fort Worth. Quality cuts, honest service, and a commitment to working as if for the Lord.",
       },
-      { property: "og:title", content: "About — A Son To Us Kingdom Cuts" },
+      { property: "og:title", content: "About — Ason To Us Kingdom Cuts" },
       {
         property: "og:description",
         content: "Meet the mobile barber bringing premium cuts to all of DFW.",
@@ -41,7 +41,7 @@ function AboutPage() {
 
       <div className="mt-12 space-y-6 text-lg leading-relaxed text-foreground/90">
         <p>
-          <span className="text-gold-gradient font-display text-xl font-semibold">A Son To Us — Kingdom Cuts </span>
+          <span className="text-gold-gradient font-display text-xl font-semibold">Ason To Us — Kingdom Cuts </span>
           is a mobile barber service born out of faith, family, and craftsmanship. We bring the
           full barbershop experience straight to your door — whether you're at home, the office, or
           anywhere across the Dallas–Fort Worth metroplex.

@@ -3,13 +3,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services & Pricing — A Son To Us Kingdom Cuts" },
+      { title: "Services & Pricing — Ason To Us Kingdom Cuts" },
       {
         name: "description",
         content:
           "Mobile barber services in DFW. Adult haircut $30, Kid's $20, Beard $10, Hair wash $25, Shave $30, Travel $15. Deposit required.",
       },
-      { property: "og:title", content: "Services & Pricing — A Son To Us Kingdom Cuts" },
+      { property: "og:title", content: "Services & Pricing — Ason To Us Kingdom Cuts" },
       {
         property: "og:description",
         content: "Transparent mobile barber pricing across all of Dallas–Fort Worth.",
