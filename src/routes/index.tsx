@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroVan from "@/assets/hero-van.jpg";
+import logoVan from "@/assets/logo-van.png";
 import cut1 from "@/assets/cut-1.jpg";
 import cut2 from "@/assets/cut-2.jpg";
 import cut3 from "@/assets/cut-3.jpg";
@@ -56,9 +57,21 @@ function Home() {
             alt="A Son To Us mobile barber van"
             width={1920}
             height={1080}
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover opacity-25"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/75 to-background" />
+          <img
+            src={logoVan}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute right-[-4%] top-1/2 hidden w-[55%] max-w-[720px] -translate-y-1/2 opacity-90 drop-shadow-[0_20px_60px_rgba(0,0,0,0.6)] md:block"
+          />
+          <img
+            src={logoVan}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-6 left-1/2 w-[110%] max-w-none -translate-x-1/2 opacity-20 md:hidden"
+          />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-24 md:px-8 md:py-36">
           <div className="max-w-3xl">
