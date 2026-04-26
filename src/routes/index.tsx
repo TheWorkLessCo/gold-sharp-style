@@ -53,7 +53,7 @@ function Home() {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
-          style={{ backgroundImage: `url(${logoVan})`, backgroundSize: "min(1400px, 130%) auto" }}
+          style={{ backgroundImage: `url(${logoVan})`, backgroundSize: "min(2000px, 180%) auto" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:px-8 md:py-32">
@@ -66,7 +66,7 @@ function Home() {
               alt="A Son To Us — Kingdom Cuts"
               width={900}
               height={560}
-              className="mt-6 w-full max-w-md drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
+              className="mt-6 w-full max-w-xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
             />
             <h1 className="sr-only">A Son To Us — Kingdom Cuts</h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl">
@@ -93,13 +93,13 @@ function Home() {
               <span>👑 Faith-driven service</span>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block md:-mr-12 lg:-mr-24">
             <img
               src={logoVan}
               alt="A Son To Us — Kingdom Cuts"
               width={900}
               height={560}
-              className="w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
+              className="w-full md:scale-125 lg:scale-[1.4] origin-center drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
             />
           </div>
         </div>
