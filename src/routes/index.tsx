@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import logoVan from "@/assets/logo-van.png";
 import cut1 from "@/assets/cut-1.jpg";
 import cut2 from "@/assets/cut-2.jpg";
 import cut3 from "@/assets/cut-3.jpg";
@@ -49,15 +50,25 @@ function Home() {
     <div>
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background" />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat bg-contain opacity-10"
+          style={{ backgroundImage: `url(${logoVan})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:px-8 md:py-32">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-primary">
               <span>👑</span> Mobile Barber Shop
             </div>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] md:text-6xl lg:text-7xl">
-              A Son To Us <span className="text-gold-gradient">Kingdom Cuts</span>
-            </h1>
+            <img
+              src={logoVan}
+              alt="A Son To Us — Kingdom Cuts"
+              width={900}
+              height={560}
+              className="mt-6 w-full max-w-md drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
+            />
+            <h1 className="sr-only">A Son To Us — Kingdom Cuts</h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl">
               Premium cuts, fades, and shaves — delivered to your door anywhere in Dallas–Fort Worth.
               Sit back. We bring the shop to you.
@@ -82,7 +93,15 @@ function Home() {
               <span>👑 Faith-driven service</span>
             </div>
           </div>
-          <div className="hidden md:block" />
+          <div className="hidden md:block">
+            <img
+              src={logoVan}
+              alt="A Son To Us — Kingdom Cuts"
+              width={900}
+              height={560}
+              className="w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
+            />
+          </div>
         </div>
       </section>
 
