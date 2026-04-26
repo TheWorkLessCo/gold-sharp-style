@@ -25,7 +25,7 @@ export const Route = createFileRoute("/gallery")({
 const photos = [
   { src: cut1, alt: "Kid's fresh fade with textured top" },
   { src: cut2, alt: "Classic side-part with faded beard" },
-  { src: cut3, alt: "Skin fade with textured top" },
+  { src: cut3, alt: "Barber lining up a fresh fade with clippers" },
   { src: cut5, alt: "Clean back fade" },
   { src: cut6, alt: "Hot towel shave" },
   { src: cut4, alt: "Premium barber tools" },
