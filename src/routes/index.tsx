@@ -52,8 +52,8 @@ function Home() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat bg-contain opacity-10"
-          style={{ backgroundImage: `url(${logoVan})` }}
+          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
+          style={{ backgroundImage: `url(${logoVan})`, backgroundSize: "min(1400px, 130%) auto" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:px-8 md:py-32">
