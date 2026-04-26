@@ -1,7 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import logoVan from "@/assets/logo-van.png";
 
 function NotFoundComponent() {
   return (
@@ -97,14 +96,11 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen flex-col pb-16 md:pb-0">
       <header className="sticky top-0 z-40 border-b border-border/50 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
-          <Link to="/" className="flex items-center group" aria-label="A Son To Us — Kingdom Cuts">
-            <img
-              src={logoVan}
-              alt="A Son To Us — Kingdom Cuts"
-              width={220}
-              height={140}
-              className="h-12 w-auto transition group-hover:scale-105 md:h-14"
-            />
+          <Link to="/" className="flex items-center gap-2 group" aria-label="A Son To Us — Kingdom Cuts">
+            <CrownIcon className="h-6 w-6 text-primary transition group-hover:scale-110" />
+            <span className="font-display text-lg font-bold tracking-tight">
+              A Son To Us <span className="text-gold-gradient">Kingdom Cuts</span>
+            </span>
           </Link>
           <nav className="hidden items-center gap-7 md:flex">
             <Link to="/" activeProps={{ className: "text-primary" }} activeOptions={{ exact: true }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Home</Link>
@@ -128,8 +124,11 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
-              <div className="flex items-center gap-3">
-                <img src={logoVan} alt="A Son To Us — Kingdom Cuts" className="h-14 w-auto" />
+              <div className="flex items-center gap-2">
+                <CrownIcon className="h-6 w-6 text-primary" />
+                <span className="font-display text-base font-bold">
+                  A Son To Us <span className="text-gold-gradient">Kingdom Cuts</span>
+                </span>
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
                 DFW's premium mobile barber experience. We bring the chair to you.
