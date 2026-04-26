@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 import logoVan from "@/assets/logo-van.png";
+import bgLuxury from "@/assets/bg-luxury.png";
 
 function NotFoundComponent() {
   return (
@@ -94,7 +95,17 @@ function CrownIcon({ className }: { className?: string }) {
 
 function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col pb-16 md:pb-0">
+    <div className="relative flex min-h-screen flex-col pb-16 md:pb-0">
+      {/* Fixed luxury background — stays in place while scrolling */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 -z-10 bg-center bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${bgLuxury})` }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 -z-10 bg-background/80"
+      />
       <header className="sticky top-0 z-40 border-b border-border/50 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
           <Link to="/" className="flex items-center gap-3 group" aria-label="A Son To Us — Kingdom Cuts">
