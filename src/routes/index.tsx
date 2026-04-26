@@ -56,10 +56,14 @@ function Home() {
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-primary">
               <span>👑</span> Mobile Barber Shop
             </div>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] md:text-7xl">
-              <span className="text-gold-gradient">A Son To Us</span>
-              <span className="block text-foreground/95">Kingdom Cuts</span>
-            </h1>
+            <img
+              src={logoVan}
+              alt="A Son To Us — Kingdom Cuts"
+              width={900}
+              height={560}
+              className="mt-6 w-full max-w-md drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] md:hidden"
+            />
+            <h1 className="sr-only">A Son To Us — Kingdom Cuts</h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl">
               Premium cuts, fades, and shaves — delivered to your door anywhere in Dallas–Fort Worth.
               Sit back. We bring the shop to you.
@@ -83,6 +87,15 @@ function Home() {
               <span className="hidden h-4 w-px bg-border md:block" />
               <span>👑 Faith-driven service</span>
             </div>
+          </div>
+          <div className="hidden md:block">
+            <img
+              src={logoVan}
+              alt="A Son To Us — Kingdom Cuts"
+              width={900}
+              height={560}
+              className="w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.7)]"
+            />
           </div>
         </div>
       </section>
