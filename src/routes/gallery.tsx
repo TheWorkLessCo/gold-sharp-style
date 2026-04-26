@@ -23,7 +23,7 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const photos = [
-  { src: cut1, alt: "Sharp fade with clean line-up" },
+  { src: cut1, alt: "Kid's fresh fade with textured top" },
   { src: cut2, alt: "Classic side-part with faded beard" },
   { src: cut3, alt: "Skin fade with textured top" },
   { src: cut5, alt: "Clean back fade" },
