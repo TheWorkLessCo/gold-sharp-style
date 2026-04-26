@@ -26,8 +26,8 @@ const photos = [
   { src: cut1, alt: "Kid's fresh fade with textured top" },
   { src: cut2, alt: "High skin fade with textured top" },
   { src: cut3, alt: "Barber lining up a fresh fade with clippers" },
-  { src: cut5, alt: "Clean back fade" },
-  { src: cut6, alt: "Hot towel shave" },
+  { src: cut5, alt: "Sharp shape-up with hard part and skin fade" },
+  { src: cut6, alt: "Kid's neckline cleanup with clippers" },
   { src: cut4, alt: "Premium barber tools" },
 ];
 
