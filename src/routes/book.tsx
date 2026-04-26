@@ -3,13 +3,13 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/book")({
   head: () => ({
     meta: [
-      { title: "Book Now — A Son To Us Kingdom Cuts | DFW Mobile Barber" },
+      { title: "Book Now — Ason To Us Kingdom Cuts | DFW Mobile Barber" },
       {
         name: "description",
         content:
           "Book your mobile barber appointment in Dallas–Fort Worth. Call or text 214-854-1477. Deposit required.",
       },
-      { property: "og:title", content: "Book Now — A Son To Us Kingdom Cuts" },
+      { property: "og:title", content: "Book Now — Ason To Us Kingdom Cuts" },
       {
         property: "og:description",
         content: "Call or text 214-854-1477 to book your mobile cut anywhere in DFW.",
