@@ -9,14 +9,14 @@ import cut6 from "@/assets/cut-6.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Ason To Us Kingdom Cuts" },
+      { title: "Gallery — A Son To Us Kingdom Cuts" },
       {
         name: "description",
         content:
-          "See the work — sharp fades, beards, shaves, and clean lineups from Ason To Us mobile barber in DFW.",
+          "See the work — sharp fades, beards, shaves, and clean lineups from A Son To Us mobile barber in DFW.",
       },
-      { property: "og:title", content: "Gallery — Ason To Us Kingdom Cuts" },
-      { property: "og:description", content: "Recent cuts and styles from Ason To Us mobile barber." },
+      { property: "og:title", content: "Gallery — A Son To Us Kingdom Cuts" },
+      { property: "og:description", content: "Recent cuts and styles from A Son To Us mobile barber." },
     ],
   }),
   component: GalleryPage,
