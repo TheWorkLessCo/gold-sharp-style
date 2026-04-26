@@ -92,14 +92,6 @@ function CrownIcon({ className }: { className?: string }) {
 }
 
 function SiteLayout({ children }: { children: React.ReactNode }) {
-  const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/services", label: "Services" },
-    { to: "/gallery", label: "Gallery" },
-    { to: "/about", label: "About" },
-    { to: "/book", label: "Book" },
-  ] as const;
-
   return (
     <div className="flex min-h-screen flex-col pb-16 md:pb-0">
       <header className="sticky top-0 z-40 border-b border-border/50 bg-background/85 backdrop-blur-md">
@@ -116,17 +108,11 @@ function SiteLayout({ children }: { children: React.ReactNode }) {
             </div>
           </Link>
           <nav className="hidden items-center gap-7 md:flex">
-            {navLinks.map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                activeProps={{ className: "text-primary" }}
-                activeOptions={{ exact: l.to === "/" }}
-                className="text-sm font-medium text-foreground/80 transition hover:text-primary"
-              >
-                {l.label}
-              </Link>
-            ))}
+            <Link to="/" activeProps={{ className: "text-primary" }} activeOptions={{ exact: true }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Home</Link>
+            <Link to="/services" activeProps={{ className: "text-primary" }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Services</Link>
+            <Link to="/gallery" activeProps={{ className: "text-primary" }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Gallery</Link>
+            <Link to="/about" activeProps={{ className: "text-primary" }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">About</Link>
+            <Link to="/book" activeProps={{ className: "text-primary" }} className="text-sm font-medium text-foreground/80 transition hover:text-primary">Book</Link>
             <a
               href={`tel:${PHONE_TEL}`}
               className="ml-2 inline-flex items-center gap-2 rounded-md bg-gold-gradient px-4 py-2 text-sm font-semibold text-primary-foreground shadow-gold transition hover:opacity-90"
